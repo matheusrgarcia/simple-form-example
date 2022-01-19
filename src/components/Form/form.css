@@ -8,6 +8,12 @@ form {
   border-radius: 8px;
 }
 
+@media only screen and (max-width: 600px) {
+  form {
+    width: 100%;
+  }
+}
+
 .title {
   display: flex;
   font-weight: 700;
