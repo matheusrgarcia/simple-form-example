@@ -1,0 +1,106 @@
+form {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  width: 100%;
+  align-self: center;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.title {
+  display: flex;
+  font-weight: 700;
+  width: 100%;
+  justify-content: center;
+  padding: 1rem 0 1rem;
+  border-bottom: 1px solid lightgray;
+}
+
+.file-input {
+  display: flex;
+  position: relative;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+
+.file-input span {
+  width: 100px;
+  height: 100px;
+  border: 6px solid #e5e7eb;
+  border-radius: 50%;
+  display: flex;
+}
+
+.file-input span::after {
+  content: "";
+  position: absolute;
+  left: 93px;
+  top: 39px;
+  width: 20px;
+  height: 20px;
+  border: 6px solid #e5e7eb;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.file-input input {
+  position: absolute;
+  cursor: pointer;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 100%;
+}
+
+.submit-button {
+  background-color: #2f4e78;
+  color: white;
+  padding: 1rem;
+  border: none;
+  border-radius: 2px;
+  margin: 1rem;
+  cursor: pointer;
+}
+
+.fields {
+  display: flex;
+  flex-direction: column;
+}
+
+.text-input {
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.text-input ::after {
+  content: "Required";
+  font-weight: 200;
+  font-size: 10px;
+  margin-left: auto;
+  margin-top: auto;
+  color: gray;
+}
+
+.text-input label {
+  font-weight: 700;
+  display: flex;
+  font-size: 12px;
+}
+
+.text-input input {
+  margin-top: 5px;
+  border-radius: 2px;
+  border: 1px solid gray;
+  height: 25px;
+}
+
+.form-footer {
+  border-top: 1px solid lightgray;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
